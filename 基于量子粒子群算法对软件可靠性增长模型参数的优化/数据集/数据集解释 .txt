@@ -1,0 +1,51 @@
+@relation 'CM1' // 项目名称
+
+// 以下为度量元
+@attribute LOC_BLANK numeric // 空白行数量
+@attribute BRANCH_COUNT numeric // 分支数量
+@attribute CALL_PAIRS numeric // 调用对数
+@attribute LOC_CODE_AND_COMMENT numeric // 代码和注释行数
+@attribute LOC_COMMENTS numeric // 注释行数
+@attribute CONDITION_COUNT numeric // 条件语句计数
+@attribute CYCLOMATIC_COMPLEXITY numeric // 圈复杂度
+@attribute CYCLOMATIC_DENSITY numeric // 圈密度
+@attribute DECISION_COUNT numeric // 决策数量
+@attribute DECISION_DENSITY numeric // 决策复杂度
+@attribute DESIGN_COMPLEXITY numeric // 设计复杂度
+@attribute DESIGN_DENSITY numeric // 设计密度
+@attribute EDGE_COUNT numeric // 边界统计
+@attribute ESSENTIAL_COMPLEXITY numeric // 本质复杂度
+@attribute ESSENTIAL_DENSITY numeric // 本质密度
+@attribute LOC_EXECUTABLE numeric // 可执行行数
+@attribute PARAMETER_COUNT numeric // 参数计数
+@attribute GLOBAL_DATA_COMPLEXITY numeric // 全局数据复杂度
+@attribute GLOBAL_DATA_DENSITY numeric // 全局数据密度
+@attribute HALSTEAD_CONTENT numeric // Halstead 内容
+@attribute HALSTEAD_DIFFICULTY numeric // Halstead 复杂度
+@attribute HALSTEAD_EFFORT numeric // Halstead 编程效率
+@attribute HALSTEAD_ERROR_EST numeric // Halstead 错误预测
+@attribute HALSTEAD_LENGTH numeric // Halstead 程序长度
+@attribute HALSTEAD_LEVEL numeric // Halstead 程序语言等级
+@attribute HALSTEAD_PROG_TIME numeric // Halstead 编写程序的时间
+@attribute HALSTEAD_VOLUME numeric // Halstead 程序容量
+@attribute MAINTENANCE_SEVERITY numeric // 维护严重性
+@attribute MODIFIED_CONDITION_COUNT numeric // 修改条件语句数
+@attribute MULTIPLE_CONDITION_COUNT numeric // 多条件语句数
+@attribute NODE_COUNT numeric // 节点计数
+@attribute NORMALIZED_CYLOMATIC_COMPLEXITY numeric // 规范圈复杂度
+@attribute NUM_OPERANDS numeric // 操作数数量
+@attribute NUM_OPERATORS numeric // 操作符数量
+@attribute NUM_UNIQUE_OPERANDS numeric // 特殊操作数数量
+@attribute NUM_UNIQUE_OPERATORS numeric // 特殊操作符数量
+@attribute NUMBER_OF_LINES numeric // 行数量
+@attribute PATHOLOGICAL_COMPLEXITY numeric // 病理复杂度
+@attribute PERCENT_COMMENTS numeric // 注释比例
+@attribute LOC_TOTAL numeric // 总行数
+@attribute Defective {Y,N} // 是否存在缺陷
+
+@data //以下为数据，每行数据代表一个模块
+6,9,2,1,0,16,5,0.2,8,2,3,0.6,17,1,0,24,3,0,0,32.54,9.5,2936.77,0.1,63,0.11,163.15,309.13,0.2,4,8,14,0.16,19,44,15,15,32,1,4,25,N
+// 数据用逗号隔开，与之前定义的元组相对应，N代表存在缺陷
+15,7,3,1,19,12,4,0.13,6,2,2,0.5,17,1,0,31,1,0,0,38.55,21.52,17846.19,0.28,141,0.05,991.46,829.45,0.25,3,6,15,0.06,51,90,32,27,67,1,39.22,32,Y
+// Y代表不存在问题
+
